@@ -26,8 +26,10 @@ Ambas funciones recorren el texto letra por letra usando un bucle `for`.
 
 ```
 nueva_pos = (pos + desplazamiento) % len(mayusculas)
-El operador % (módulo) asegura que si el desplazamiento supera el límite del alfabeto (posición 27), el conteo vuelva a empezar desde el cero. Esto crea un efecto de "rueda" o círculo infinito sin necesidad de especificar la cantidad de carácteres en el "pos".
+El operador % (módulo) asegura que si el desplazamiento supera el límite del alfabeto (posición 27), el conteo vuelva a empezar desde el cero.
+Esto crea un efecto de "rueda" o círculo infinito sin necesidad de especificar la cantidad de carácteres en el "pos".
 ```
 
 ### 4. Preservación de Caracteres
-Si el carácter no es una letra (por ejemplo, un espacio, un número o un punto), el código ejecuta el bloque else, añadiendo el carácter tal cual al resultado sin modificarlo. Esto mantiene la estructura de las frases original.
+Si el carácter no es una letra (por ejemplo, un espacio, un número o un punto), el código ejecuta el bloque else, añadiendo el carácter tal cual al resultado sin modificarlo.
+Esto mantiene la estructura de las frases original.
