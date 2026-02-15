@@ -4,7 +4,7 @@
 
 El cifrado César es un tipo de **cifrado por sustitución**. Debe su nombre a Julio César, quien lo usaba para comunicarse con sus generales. 
 
-Funciona desplazando cada letra del alfabeto un número determinado de posiciones. Por ejemplo, con un **desplazamiento de 3**:
+Funciona desplazando cada letra del alfabeto un número determinado de posiciones. Por ejemplo, con un **desplazamiento de +3**:
 - La **A** se convierte en **D**.
 - La **B** se convierte en **E**.
 - La **Z** se "da la vuelta" y se convierte en **C**.
@@ -26,7 +26,8 @@ Ambas funciones recorren el texto letra por letra usando un bucle `for`.
 
 ```
 nueva_pos = (pos + desplazamiento) % len(mayusculas)
-El operador % (módulo) asegura que si el desplazamiento supera el límite del alfabeto (posición 27), el conteo vuelva a empezar desde el cero.
+El operador % (módulo) asegura que si el desplazamiento supera el límite del alfabeto (posición 27),
+el conteo vuelva a empezar desde el cero.
 Esto crea un efecto de "rueda" o círculo infinito sin necesidad de especificar la cantidad de carácteres en el "pos".
 ```
 
